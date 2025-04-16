@@ -31,10 +31,8 @@ class Main {
         System.out.print("Podaj wiek: ");
         int age = scanner.nextInt();
         scanner.nextLine();
-        System.out.print("Podaj numer indeksu: ");
-        String studentId = scanner.nextLine();
 
-        s.addStudent(new Student(name, lastName, age, studentId));
+        s.addStudent(new Student(name, lastName, age));
         System.out.println("Dodano studenta!");
       } else if (choice == 2) {
         var students = s.getStudents();
