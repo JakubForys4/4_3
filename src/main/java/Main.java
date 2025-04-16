@@ -13,8 +13,12 @@ class Main {
   public static void main(String[] args) {
     try {
       Service s = new Service();
-      s.addStudent(new Student("Krzysztof", 20));
-      s.addStudent(new Student("Janusz", 40));
+      Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Dodaj studenta: ");
+        
+        
+      }
 
       var students = s.getStudents();
       for(Student current : students) {
