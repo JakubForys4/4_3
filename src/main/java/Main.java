@@ -30,7 +30,7 @@ class Main {
         String lastName = scanner.nextLine();
         System.out.print("Podaj wiek: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         System.out.print("Podaj numer indeksu: ");
         String studentId = scanner.nextLine();
 
