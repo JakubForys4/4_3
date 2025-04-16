@@ -14,15 +14,15 @@ class Main {
     try {
       Service s = new Service();
       Scanner scanner = new Scanner(System.in);
-      
+
       System.out.print("Podaj imię: ");
       String name = scanner.nextLine();
       System.out.print("Podaj wiek: ");
       int age = scanner.nextInt();
-      
+
       s.addStudent(new Student(name, age));
       System.out.println("Dodano studenta!");
-      
+
       scanner.close();
     } catch (IOException e) {
       System.out.println("Wystąpił błąd: " + e.getMessage());
