@@ -26,10 +26,15 @@ class Main {
       if (choice == 1) {
         System.out.print("Podaj imię: ");
         String name = scanner.nextLine();
+        System.out.print("Podaj nazwisko: ");
+        String lastName = scanner.nextLine();
         System.out.print("Podaj wiek: ");
         int age = scanner.nextInt();
+        scanner.nextLine(); // consume newline
+        System.out.print("Podaj numer indeksu: ");
+        String studentId = scanner.nextLine();
 
-        s.addStudent(new Student(name, age));
+        s.addStudent(new Student(name, lastName, age, studentId));
         System.out.println("Dodano studenta!");
       } else if (choice == 2) {
         var students = s.getStudents();
